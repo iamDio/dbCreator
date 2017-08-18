@@ -1,0 +1,19 @@
+{
+  "name": "dbcreator",
+  "version": "1.0.0",
+  "description": "package that creates a db",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamDio/dbCreator.git"
+  },
+  "author": "NPM dio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamDio/dbCreator/issues"
+  },
+  "homepage": "https://github.com/iamDio/dbCreator#readme"
+}
