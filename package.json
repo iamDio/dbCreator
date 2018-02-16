@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/iamDio/dbCreator/issues"
   },
-  "homepage": "https://github.com/iamDio/dbCreator#readme"
+  "homepage": "https://github.com/iamDio/dbCreator#readme",
+  "dependencies": {
+    "mysql": "^2.15.0"
+  }
 }

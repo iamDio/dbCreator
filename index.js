@@ -1,10 +1,26 @@
-//const sql = require('mysql')
+const mysql = require('mysql')
 const fs = require('fs')
+const util = require('util')
 
 exports.dbCreator = function(){
 	console.log("test message");
-	fs.appendFile('index.js', 'test one two', (err)=> {
+
+
+	fs.appendFile('db.js', (err)=> {
 		if(err) throw err;
+
+		let connection = mysql.createConnection({
+			host: "",
+			port: 3306,
+		  
+			// Your username
+			user: "",
+		  
+			// Your password
+			password: "",
+			database: ""
+		  });
+		})
 		console.log('file created succesfully')
-	})
+
 }
