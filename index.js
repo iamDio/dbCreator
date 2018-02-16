@@ -8,7 +8,7 @@ exports.dbCreator = function(){
 
 	fs.appendFile('db.js', (err)=> {
 		if(err) throw err;
-
+		
 		let connection = mysql.createConnection({
 			host: "",
 			port: 3306,
@@ -20,6 +20,12 @@ exports.dbCreator = function(){
 			password: "",
 			database: ""
 		  });
+
+		  connection.connect(function(err) {
+			if (err) throw err;
+			  console.log('connection succesful')
+		  });
+
 		})
 		console.log('file created succesfully')
 
